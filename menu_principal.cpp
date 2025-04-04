@@ -1,4 +1,9 @@
 #include <iostream>
+#include "operaciones_basicas.h"
+#include "par_o_impar.h"
+#include "conversiones.h"
+#include "palindromo.h"
+#include "contar_palabras.h"
 #include "tabla_multiplicar.h"
 #include "multiplicacion_manual.h"
 #include "decimal_binario.h"
@@ -10,6 +15,58 @@
 #include "hipotenusa.h"
 #include "desarrollo_binomio.h"
 using namespace std;
+
+void menuHugo() {
+    cout << "\n===== Menu de programas realizados por Hugo Garcia =====" << endl;
+    cout << "1. Operaciones Basicas" << endl;
+    cout << "2. Numero par o impar" << endl;
+    cout << "3. Conversiones de medidas o peso" << endl;
+    cout << "4. Palindromo" << endl;
+    cout << "5. Contar Palabras" << endl;
+    cout << "6. Salir" << endl;
+    cout << "Elija una opcion: ";
+
+
+
+    int opcionH;
+
+    do {
+        menuHugo(); 
+        cin >> opcionH;  
+
+        switch (opcionH) {
+            case 1:
+                menuOperaciones();  
+                break;
+
+            case 2:
+                verificarParImpar();  
+                break;
+
+            case 3:
+                realizarConversiones();  
+                break;
+
+            case 4: {
+                verificarPalindromo();  
+                break;
+            }
+
+            case 5:
+                contarPalabras();  
+                break;
+
+            case 6:
+                cout << "Saliendo. . ." << endl;
+                break;
+
+            default:
+                cout << "Opcion no encontrada. Intente de nuevo." << endl;
+        }
+
+    } while (opcionH != 6);  
+}
+
 
 void menuLuis() {
     cout << "\n===== Menu de programas realizados por Luis Martínez =====" << endl;
