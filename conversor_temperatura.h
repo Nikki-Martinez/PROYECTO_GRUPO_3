@@ -8,6 +8,6 @@ void kelvinCelsius(double& k, double& c);
 void fahrenheitKelvin(double& f, double& k);
 void kelvinFahrenheit(double& k, double& f);
 
-void menu_conversiones(int opcion);
+void menu_conversiones();
 
 #endif

@@ -63,9 +63,9 @@ void kelvinFahrenheit(double& k, double& f){
 	cout << "Grados Kelvin: " << k << " - Grados Fahrenheit: " << f<< endl;
 }
 
-int opcion;
+int opcionMC;
 
-void menu_conversiones(int opcion){
+void menu_conversiones(){
 	do {
     	
         cout << "\n----------Menu Conversiones de Temperatura----------" << endl;
@@ -76,10 +76,10 @@ void menu_conversiones(int opcion){
         cout << "5. Grados Fahrenheit a Grados Kelvin" << endl;
         cout << "1. Grados Kelvin a Grados Fahrenheit" << endl;
         cout << "Ingrese una opcion: ";
-        cin >> opcion;
+        cin >> opcionMC;
 
         
-        switch(opcion) {
+        switch(opcionMC) {
             case 1:
                 celsiusFahrenheit(c,f);
                 break;
@@ -111,12 +111,12 @@ void menu_conversiones(int opcion){
             default:
                 cout << "Opcion no encontrada" << endl;
         }
-    } while(opcion != 7); 	
+    } while(opcionMC != 7); 	
 	
 }
 
-/*main(){
+main(){
 	
-	menu_conversiones(opcion);
+	menu_conversiones();
 	system("pause");
-}*/
+}
