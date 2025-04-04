@@ -115,8 +115,8 @@ void menu_conversiones(){
 	
 }
 
-main(){
+/*main(){
 	
 	menu_conversiones();
 	system("pause");
-}
+}*/

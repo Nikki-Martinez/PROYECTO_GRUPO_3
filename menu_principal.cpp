@@ -22,21 +22,18 @@
 using namespace std;
 
 void menuHugo() {
-    cout << "\n===== Menu de programas realizados por Hugo Garcia =====" << endl;
-    cout << "1. Operaciones Basicas" << endl;
-    cout << "2. Numero par o impar" << endl;
-    cout << "3. Conversiones de medidas o peso" << endl;
-    cout << "4. Palindromo" << endl;
-    cout << "5. Contar Palabras" << endl;
-    cout << "6. Salir" << endl;
-    cout << "Elija una opcion: ";
-
-
-
+    
     int opcionH;
 
     do {
-        menuHugo(); 
+		cout << "\n===== Menu de programas realizados por Hugo Garcia =====" << endl;
+	    cout << "1. Operaciones Basicas" << endl;
+	    cout << "2. Numero par o impar" << endl;
+	    cout << "3. Conversiones de medidas o peso" << endl;
+	    cout << "4. Palindromo" << endl;
+	    cout << "5. Contar Palabras" << endl;
+	    cout << "6. Salir" << endl;
+	    cout << "Elija una opcion: ";
         cin >> opcionH;  
 
         switch (opcionH) {
@@ -73,18 +70,19 @@ void menuHugo() {
 }
 
 void menuDoris(){
-	cout << "\n===== Menu de programas realizados por Doris Gonzalez =====" << endl;
-	cout << "1. Numeros Arabigos a Romanos" <<endl;
-	cout << "2. Numeros Enteros a Letras" <<endl;
-	cout << "3. Numeros Enteros con Decimales  a Letras" <<endl;
-	cout << "4. Tabla de Multiplicar" <<endl;
-	cout << "5. Temporizador" <<endl;
-	cout << "Ingrese una opcion: ";
+
 
     int opcionD;
 
     do {
-        menuDoris(); 
+    	cout << "\n===== Menu de programas realizados por Doris Gonzalez =====" << endl;
+		cout << "1. Numeros Arabigos a Romanos" <<endl;
+		cout << "2. Numeros Enteros a Letras" <<endl;
+		cout << "3. Numeros Enteros con Decimales  a Letras" <<endl;
+		cout << "4. Tabla de Multiplicar" <<endl;
+		cout << "5. Temporizador" <<endl;
+		cout << "6. Salir" << endl;
+		cout << "Ingrese una opcion: ";
         cin >> opcionD;  
 
         switch (opcionD) {
@@ -138,18 +136,18 @@ void menuDoris(){
 }
 
 void menuLuis() {
-    cout << "\n===== Menu de programas realizados por Luis Martínez =====" << endl;
-    cout << "1. Tablas de multiplicar" << endl;
-    cout << "2. Multiplicacion manual" << endl;
-    cout << "3. Conversion de decimal a binario" << endl;
-    cout << "4. Conversion de decimal a hexadecimal" << endl;
-    cout << "5. Conversor de temperatura (Programa libre)" << endl;
-    cout << "6. Salir" << endl;
-    cout << "Elija una opción: ";
+    
     int opcionL;
 
     do {
-        menuLuis(); 
+        cout << "\n===== Menu de programas realizados por Luis Martínez =====" << endl;
+	    cout << "1. Tablas de multiplicar" << endl;
+	    cout << "2. Multiplicacion manual" << endl;
+	    cout << "3. Conversion de decimal a binario" << endl;
+	    cout << "4. Conversion de decimal a hexadecimal" << endl;
+	    cout << "5. Conversor de temperatura (Programa libre)" << endl;
+	    cout << "6. Salir" << endl;
+	    cout << "Elija una opción: "; 
         cin >> opcionL;  
 
         switch (opcionL) {
@@ -190,18 +188,18 @@ void menuLuis() {
 }
 
 void menuKevin(){
-	cout<<"\n===== Menu de programas realizados por Kevin Sian ====="<<endl;
-	cout<<"1. Figuras geometricas basicas"<<endl;
-	cout<<"2. Mover un punto en toda la pantalla"<<endl;
-	cout<<"3. Simulacion de un cajero automatico"<<endl;
-	cout<<"4. Calcular la hipotenusa"<<endl;
-	cout<<"5. Desarrollo del binomio (Programa libre)"<<endl;
-    cout<<"6. Salir"<<endl;
-	cout<<"Elija una opcion: ";
+	
 	int opcionK;
 	
 	do{
-		menuKevin();
+		cout<<"\n===== Menu de programas realizados por Kevin Sian ====="<<endl;
+		cout<<"1. Figuras geometricas basicas"<<endl;
+		cout<<"2. Mover un punto en toda la pantalla"<<endl;
+		cout<<"3. Simulacion de un cajero automatico"<<endl;
+		cout<<"4. Calcular la hipotenusa"<<endl;
+		cout<<"5. Desarrollo del binomio (Programa libre)"<<endl;
+	    cout<<"6. Salir"<<endl;
+		cout<<"Elija una opcion: ";
 		cin>>opcionK;
 		
 		switch (opcionK){
@@ -246,7 +244,7 @@ void mostrarMenu(){
 	cout<<"5. Salir"<<endl;
 	cout<<"Elija una opcion: ";
 }
-main(){
+int main(){
 	int opcionP;
 	do{
 	mostrarMenu();
@@ -259,19 +257,21 @@ main(){
 			break;
 		case 2:
 			system("cls");
-			menuDoris;
+			menuDoris();
 			break;
 		case 3:
 			system("cls");
-			menuLuis;
+			menuLuis();
 			break;
 		case 4:
 			system("cls");
-			menuKevin;
+			menuKevin();
 			break;
 		case 5:
 			cout<<"Saliendo. . ."<<endl;
 	}
 	}while (opcionP!=5);
+	
+	return 0;
 }
 
