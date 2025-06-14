@@ -1,0 +1,88 @@
+# Project: Proyecto 1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = ArabigosARomanos.o cajero_automatico.o contar_palabras.o conversiones.o conversor_temperatura.o decimal_binario.o decimal_hexadecimal.o DecimalesALetras.o desarrollo_binomio.o EnterosALetras.o figuras_geometricas.o hipotenusa.o menu_principal.o movimiento_punto.o multiplicacion_manual.o operaciones_basicas.o palindromo.o par_o_impar.o tabla_multiplicar_1-10.o TablaMultiplicar.o Temporizador.o
+LINKOBJ  = ArabigosARomanos.o cajero_automatico.o contar_palabras.o conversiones.o conversor_temperatura.o decimal_binario.o decimal_hexadecimal.o DecimalesALetras.o desarrollo_binomio.o EnterosALetras.o figuras_geometricas.o hipotenusa.o menu_principal.o movimiento_punto.o multiplicacion_manual.o operaciones_basicas.o palindromo.o par_o_impar.o tabla_multiplicar_1-10.o TablaMultiplicar.o Temporizador.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = "Proyecto 1.exe"
+CXXFLAGS = $(CXXINCS) -std=c++11
+CFLAGS   = $(INCS) -std=c++11
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+ArabigosARomanos.o: ArabigosARomanos.cpp
+	$(CPP) -c ArabigosARomanos.cpp -o ArabigosARomanos.o $(CXXFLAGS)
+
+cajero_automatico.o: cajero_automatico.cpp
+	$(CPP) -c cajero_automatico.cpp -o cajero_automatico.o $(CXXFLAGS)
+
+contar_palabras.o: contar_palabras.cpp
+	$(CPP) -c contar_palabras.cpp -o contar_palabras.o $(CXXFLAGS)
+
+conversiones.o: conversiones.cpp
+	$(CPP) -c conversiones.cpp -o conversiones.o $(CXXFLAGS)
+
+conversor_temperatura.o: conversor_temperatura.cpp
+	$(CPP) -c conversor_temperatura.cpp -o conversor_temperatura.o $(CXXFLAGS)
+
+decimal_binario.o: decimal_binario.cpp
+	$(CPP) -c decimal_binario.cpp -o decimal_binario.o $(CXXFLAGS)
+
+decimal_hexadecimal.o: decimal_hexadecimal.cpp
+	$(CPP) -c decimal_hexadecimal.cpp -o decimal_hexadecimal.o $(CXXFLAGS)
+
+DecimalesALetras.o: DecimalesALetras.cpp
+	$(CPP) -c DecimalesALetras.cpp -o DecimalesALetras.o $(CXXFLAGS)
+
+desarrollo_binomio.o: desarrollo_binomio.cpp
+	$(CPP) -c desarrollo_binomio.cpp -o desarrollo_binomio.o $(CXXFLAGS)
+
+EnterosALetras.o: EnterosALetras.cpp
+	$(CPP) -c EnterosALetras.cpp -o EnterosALetras.o $(CXXFLAGS)
+
+figuras_geometricas.o: figuras_geometricas.cpp
+	$(CPP) -c figuras_geometricas.cpp -o figuras_geometricas.o $(CXXFLAGS)
+
+hipotenusa.o: hipotenusa.cpp
+	$(CPP) -c hipotenusa.cpp -o hipotenusa.o $(CXXFLAGS)
+
+menu_principal.o: menu_principal.cpp
+	$(CPP) -c menu_principal.cpp -o menu_principal.o $(CXXFLAGS)
+
+movimiento_punto.o: movimiento_punto.cpp
+	$(CPP) -c movimiento_punto.cpp -o movimiento_punto.o $(CXXFLAGS)
+
+multiplicacion_manual.o: multiplicacion_manual.cpp
+	$(CPP) -c multiplicacion_manual.cpp -o multiplicacion_manual.o $(CXXFLAGS)
+
+operaciones_basicas.o: operaciones_basicas.cpp
+	$(CPP) -c operaciones_basicas.cpp -o operaciones_basicas.o $(CXXFLAGS)
+
+palindromo.o: palindromo.cpp
+	$(CPP) -c palindromo.cpp -o palindromo.o $(CXXFLAGS)
+
+par_o_impar.o: par_o_impar.cpp
+	$(CPP) -c par_o_impar.cpp -o par_o_impar.o $(CXXFLAGS)
+
+tabla_multiplicar_1-10.o: tabla_multiplicar_1-10.cpp
+	$(CPP) -c tabla_multiplicar_1-10.cpp -o tabla_multiplicar_1-10.o $(CXXFLAGS)
+
+TablaMultiplicar.o: TablaMultiplicar.cpp
+	$(CPP) -c TablaMultiplicar.cpp -o TablaMultiplicar.o $(CXXFLAGS)
+
+Temporizador.o: Temporizador.cpp
+	$(CPP) -c Temporizador.cpp -o Temporizador.o $(CXXFLAGS)
